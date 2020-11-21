@@ -27,8 +27,8 @@ $(function () {
       var next = Math.abs(diff) / (3600 * 24 * 1000);
       n = Math.ceil(next);
       console.log(n);
-      tomo = tomo + (3600*24*1000);
-      // tomo = new Date("Oct 12 2020, 00:00:00").getTime() + (3600*24*1000 * (n + 1));
+      // tomo = tomo + (3600*24*1000);
+      tomo = new Date("Oct 12 2020, 00:00:00").getTime() + (3600*24*1000 * (n + 1));
       diff = tomo - now;
       console.log('tday: ' + new Date(now).toUTCString())
       console.log('tomo: ' + new Date(tomo).toUTCString());
